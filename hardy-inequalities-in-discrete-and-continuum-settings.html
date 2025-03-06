@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>IS9-Stein method | SPA 2025</title>
-  <meta name="description" content="IS9-Stein method | SPA 2025" />
+  <title>Hardy Inequalities in Discrete and Continuum Settings | SPA 2025</title>
+  <meta name="description" content="Hardy Inequalities in Discrete and Continuum Settings | SPA 2025" />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="IS9-Stein method | SPA 2025" />
+  <meta property="og:title" content="Hardy Inequalities in Discrete and Continuum Settings | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="IS9-Stein method | SPA 2025" />
+  <meta name="twitter:title" content="Hardy Inequalities in Discrete and Continuum Settings | SPA 2025" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="contributed-and-invited-sessions-2.html"/>
-<link rel="next" href="plenary-session-2.html"/>
+<link rel="prev" href="plenary-session-2.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -129,22 +129,92 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="is9-stein-method" class="section level2 unnumbered hasAnchor">
-<h2>IS9-Stein method<a href="is9-stein-method.html#is9-stein-method" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="hardy-inequalities-in-discrete-and-continuum-settings" class="section level2 unnumbered hasAnchor">
+<h2>Hardy Inequalities in Discrete and Continuum Settings<a href="hardy-inequalities-in-discrete-and-continuum-settings.html#hardy-inequalities-in-discrete-and-continuum-settings" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="hardy-inequalities-for-semigroups" class="section level3 unnumbered hasAnchor">
+<h3>Hardy (in)equalities for semigroups<a href="hardy-inequalities-in-discrete-and-continuum-settings.html#hardy-inequalities-for-semigroups" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="flushleft">
+<p>Krzysztof BOGDAN <em>Wrocław University of Science and Technology</em><br />
+<strong>Krzysztof BOGDAN</strong> <em>Wrocław University of Science and Technology</em></p>
+</div>
+The purpose of the talk is to point out the connection of superharmonic
+functions for Hardy-type inequalities for Sobolev-Bregman forms, or
+<span class="math inline">\(p\)</span>-forms, where <span class="math inline">\(1&lt;p&lt;\infty\)</span>. The guiding principle is that for a
+Dirichlet form <span class="math inline">\(\mathcal E\)</span> on <span class="math inline">\(L^2(X,dx)\)</span> with generator <span class="math inline">\(\mathcal L\)</span>
+and (nonnegative, superharmonic) function <span class="math inline">\(h&gt;0\)</span>, <span class="math inline">\(\mathcal L h\le 0\)</span>, we
+have <span class="math display">\[\mathcal E(u,u)\ge \int \frac{-\mathcal L h}{h} u^2\]</span> for
+functions <span class="math inline">\(u\)</span> in the domain of <span class="math inline">\(\mathcal E\)</span>, see <span class="math display">\[1\]</span>. More
+specifically, we consider a (symmetric) transition probability density
+<span class="math display">\[p_t(x,y)=p_t(y,x), \quad x,y\in X,\; t&gt;0,\]</span> (nonnegative) increasing
+function <span class="math inline">\(f:[0,\infty)\to [0,\infty),\)</span> a measure <span class="math inline">\(\mu\)</span> on <span class="math inline">\(X\)</span>, and
+define <span class="math display">\[h(x):=\int_0^\infty f(s)P_s\mu(x)ds, \quad x\in X.\]</span> This
+function is superharmonic, in fact, excessive for the semigroup
+<span class="math inline">\(P_tu(x):=\int_X p_t(x,y)u(y)dy\)</span>. If we denote
+<span class="math display">\[q(x):= \frac{1}{h(x)}\int_0^\infty f&#39;(s)P_s\mu(x)ds,\]</span> then, guided by
+the above principle, we get the Hardy inequality <span class="math display">\[\tag{1}
+\mathcal E(u,u)\ge \int_X u(x)^2 q(x)dx,\]</span> We will use the function <span class="math inline">\(h\)</span>
+to <em>condition</em> in a sense of Doob the following Sobolev-Bregman form of
+the fractional Laplacian $$
+<span class="math display">\[\begin{aligned}
+        \mathcal E_p [u]
+                &amp;:=&amp;
+        \frac{1}{2} \int_{\mathbb{R}^d}\int_{\mathbb{R}^d}
+        (u(y)-u(x))
+        \left(
+        u(y)^{\langle p - 1 \rangle} - u(x)^{\langle p - 1 \rangle}
+        \right)
+        \nu(x,y)\,dxdy,
+    
+\end{aligned}\]</span>
+<p><span class="math display">\[ where
+\]</span>(x,y)=2<sup>{}((d+)/2)</sup>{-d/2}/|(-/2)||y-x|^{-d-}, x, y ,$$
+In <span class="math display">\[4\]</span>, we give a ground-state representation for <span class="math inline">\(\mathcal E_p[u]\)</span>,
+which extends the Hardy identities from <span class="math display">\[2\]</span> and <span class="math display">\[3, Proposition
+4.1\]</span>. We then get the following optimal Hardy inequality.</p>
+<p><strong>Theorem 1.</strong> Let <span class="math inline">\(0&lt;\alpha&lt;d \wedge 2\)</span>, <span class="math inline">\(0 \leq \beta \leq d-\alpha\)</span>,
+and <span class="math inline">\(1&lt;p&lt;\infty\)</span>. Then, <span class="math display">\[\begin{aligned}
+\mathcal E_p{[u]}&amp;\geq \kappa_{(d-\alpha)/p} \int_{{\mathbb{R}^d}} \frac{|u(x)|^p}{|x|^{\alpha}} \,dx
+\quad \text{ for all } \quad u \in L^p({\mathbb{R}^d}),
+\label{e.Hp}
+\end{aligned}\]</span> where <span class="math display">\[\label{e.dkb}
+\kappa_{\beta}:=\frac{2^\alpha\Gamma\big(\frac{\beta+\alpha}{2}\big) \Gamma\big(\frac{d-\beta}{2}\big)}{\Gamma\big(\frac{\beta}{2}\big)\Gamma\big(\frac{d-\beta-\alpha}{2}\big)}.\]</span></p>
+<p>It is important to notice that <a href="#e.Hp" reference-type="eqref" reference="e.Hp"><span class="math display">\[e.Hp\]</span></a> improves the Hardy inequality <em>transferred</em> from
+<span class="math inline">\(L^2\)</span>, namely for <span class="math inline">\(p\neq 2\)</span>, we have <span class="math display">\[\label{e.i}
+\kappa_{(d-\alpha)/p}&gt;\frac{4(p-1)}{p^2} \,
+\frac{2^\alpha\Gamma\left(\frac{d+\alpha}{4}\right)^2}
+{\Gamma\left(\frac{d-\alpha}{4}\right)^{2}},\]</span> see
+Figure <a href="hardy-inequalities-in-discrete-and-continuum-settings.html#fig:comp" reference-type="ref" reference="fig:comp">1</a>.</p>
+<div class="float" id="fig:comp">
+<img src="rys2.png" style="width:12cm" alt="Illustration of e.i for d=3, \alpha=1" />
+<div class="figcaption">Illustration of <a href="#e.i" reference-type="eqref" reference="e.i"><span class="math display">\[e.i\]</span></a> for <span class="math inline">\(d=3, \alpha=1\)</span></div>
+</div>
+<p>We also give applications to contractivity of Schrödinger perturbations
+of the fractional Laplacian. The above results are given in <span class="math display">\[4\]</span>.</p>
+<div id="bibliography" class="section level4 unnumbered hasAnchor">
+<h4>Bibliography<a href="stochastic-equations-and-branching-processes.html#bibliography" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><span class="math display">\[1\]</span> P. J. Fitzsimmons, “Hardy’s inequality for Dirichlet forms,” <em>J.
+Math. Anal. Appl.</em>, vol. 250, no. 2, pp. 548–560, 2000.</p>
+<p><span class="math display">\[2\]</span> K. Bogdan, B. Dyda, and P. Kim, “Hardy inequalities and
+non-explosion results for semigroups,” <em>Potential Anal.</em>, vol. 44, no.
+2, pp. 229–247, 2016.</p>
+<p><span class="math display">\[3\]</span> R. L. Frank, E. H. Lieb, and R. Seiringer, “Hardy-Lieb-Thirring
+inequalities for fractional Schrödinger operators,” J. Amer. Math. Soc.,
+vol. 21, no. 4, pp. 925–950, 2008.</p>
+<p><span class="math display">\[4\]</span> K. Bogdan, T. Jakubowski, J. Lenczewska, and K. Pietruska-Pałuba,
+“Optimal Hardy inequality for the fractional Laplacian on <span class="math inline">\(L^p\)</span>,” J.
+Funct. Anal., vol. 282, no. 8, Paper No. 109395, 31 pp., 2022.</p>
 
+</div>
+</div>
 </div>
 <!-- </div> -->
-
-
-
-</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="contributed-and-invited-sessions-2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="plenary-session-2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="plenary-session-2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
