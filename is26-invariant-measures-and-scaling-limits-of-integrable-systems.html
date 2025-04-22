@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>IS20: Non-Equilibrium Statistical Mechanics | SPA 2025</title>
-  <meta name="description" content="IS20: Non-Equilibrium Statistical Mechanics | SPA 2025" />
+  <title>IS26: Invariant Measures and Scaling Limits of Integrable Systems | SPA 2025</title>
+  <meta name="description" content="IS26: Invariant Measures and Scaling Limits of Integrable Systems | SPA 2025" />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="IS20: Non-Equilibrium Statistical Mechanics | SPA 2025" />
+  <meta property="og:title" content="IS26: Invariant Measures and Scaling Limits of Integrable Systems | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="IS20: Non-Equilibrium Statistical Mechanics | SPA 2025" />
+  <meta name="twitter:title" content="IS26: Invariant Measures and Scaling Limits of Integrable Systems | SPA 2025" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="is19-branching-and-interacting-particle-systems.html"/>
-<link rel="next" href="is21-on-nodal-random-variables.html"/>
+<link rel="prev" href="is25-quasi-stationary-distributions-and-applications.html"/>
+<link rel="next" href="is27-rough-analysis.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -250,75 +250,38 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="is20-non-equilibrium-statistical-mechanics" class="section level1 unnumbered hasAnchor">
-<h1>IS20: Non-Equilibrium Statistical Mechanics<a href="is20-non-equilibrium-statistical-mechanics.html#is20-non-equilibrium-statistical-mechanics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Organizer: Makoto Katori (Chuo University)</p>
-<div id="collisions-of-the-supercritical-keller-segel-particle-system" class="section level2 unnumbered hasAnchor">
-<h2>Collisions of the supercritical Keller-Segel particle system<a href="is20-non-equilibrium-statistical-mechanics.html#collisions-of-the-supercritical-keller-segel-particle-system" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="yoan-tardy" class="section level4 unnumbered hasAnchor">
-<h4>Yoan Tardy<a href="is20-non-equilibrium-statistical-mechanics.html#yoan-tardy" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>We study a particle system naturally associated to the <span class="math inline">\(2\)</span>-dimensional
-Keller-Segel equation. It consists of <span class="math inline">\(N\)</span> Brownian particles in the
-plane, interacting through a binary attraction in <span class="math inline">\(\theta /Nr\)</span>, where
-<span class="math inline">\(r\)</span> stands for the distance between two particles. When the intensity
-<span class="math inline">\(\theta\)</span> of this attraction is greater than <span class="math inline">\(2\)</span>, this particle system
-explodes in finite time. We assume that <span class="math inline">\(N&gt;3\theta\)</span> and study in details
-what happens near explosion. There are two slightly different scenarios,
-depending on the values of <span class="math inline">\(N\)</span> and <span class="math inline">\(\theta\)</span>, here is one: at explosion,
-a cluster consisting of precisely <span class="math inline">\(k_0\)</span> particles emerges, for some
-deterministic <span class="math inline">\(k_0\ge 7\)</span> depending on <span class="math inline">\(N\)</span> and <span class="math inline">\(\theta\)</span>. Just before
-explosion, there are infinitely many <span class="math inline">\((k_0-1)\)</span>-ary collisions. There are
-also infinitely many <span class="math inline">\((k_0-2)\)</span>-ary collisions before each <span class="math inline">\((k_0-1)\)</span>-ary
-collision. And there are infinitely many binary collisions before each
-<span class="math inline">\((k_0-2)\)</span>-ary collision. Finally, collisions of subsets of
-<span class="math inline">\(3,\dots,k_0-3\)</span> particles never occur. The other scenario is similar
-except that there are no <span class="math inline">\((k_0-2)\)</span>-ary collisions.</p>
-<p><strong>Theorem.(partially informal)</strong> Assume that <span class="math inline">\(\theta \geq 2\)</span>, that
-<span class="math inline">\(N&gt;3\theta\)</span> and define <span class="math inline">\(k_0 =\lceil 2N/\theta\rceil \in \{ 7,\dots N\}\)</span>,
-<span class="math inline">\(k_1 = k_0-1\)</span> and <span class="math inline">\(k_2\in \{k_0-1,k_0-2\}\)</span> depending on <span class="math inline">\(\theta\)</span> and
-<span class="math inline">\(N\)</span>. Consider the <span class="math inline">\(KS(\theta ,N)\)</span>-process <span class="math inline">\((X_t)_{t\ge 0}\)</span> which is a
-solution in a weak sense of the SDE
-<span class="math display">\[\mbox{ for all } i\in \{1,\dots, N\}, \quad {\rm d}X^i_t = {\rm d}B^i_t - \frac{\theta}{N} \sum_{j\ne i} \frac{X^i_t - X^j_t}{\|X^i_t - X^j_t\|^2} {\rm d}t.\]</span>
-For all <span class="math inline">\(x \in E_2\)</span>, we <span class="math inline">\(\mathbb{P}_x\)</span>-a.s. have the following
-properties:</p>
-<p><span class="math inline">\(i\)</span> <span class="math inline">\(\zeta\)</span> is finite and
-<span class="math inline">\(X_{\zeta- } =\lim _{t \rightarrow \zeta- } X_{t}\)</span> exists for the usual
-topology of <span class="math inline">\((\mathbb{R}^2)^N\)</span>;</p>
-<p><span class="math inline">\(ii\)</span> there is <span class="math inline">\(K_0\subset \{ 1,\dots, N \}\)</span> with cardinal
-<span class="math inline">\(|K_0| = k_0\)</span> such that there is a <span class="math inline">\(K_0\)</span>-collision in the configuration
-<span class="math inline">\(X_{\zeta-}\)</span>, and for all <span class="math inline">\(K\subset \{ 1,\dots,N \}\)</span> such that
-<span class="math inline">\(|K| &gt;k_0\)</span>, there is no <span class="math inline">\(K\)</span>-collision in the configuration
-<span class="math inline">\(X_{\zeta -}\)</span>;</p>
-<p><span class="math inline">\(iii\)</span> for all <span class="math inline">\(t\in [0,\zeta)\)</span> and all <span class="math inline">\(K \subset K_0\)</span> with cardinal
-<span class="math inline">\(|K| = k_1\)</span>, during <span class="math inline">\((t,\zeta)\)</span>, there is an infinite number of
-<span class="math inline">\(K\)</span>-collisions and none of these instants of <span class="math inline">\(K\)</span>-collision is isolated;</p>
-<p><span class="math inline">\(iv\)</span> if <span class="math inline">\(k_2= k_0-2\)</span>, then for all <span class="math inline">\(L\subset K\subset K_0\)</span> such that
-<span class="math inline">\(|L| = k_2\)</span> and <span class="math inline">\(|K| = k_1\)</span>, for all instant <span class="math inline">\(t \in (0,\zeta)\)</span> of
-<span class="math inline">\(K\)</span>-collision and all <span class="math inline">\(s\in [0,t)\)</span>, during <span class="math inline">\((s,t)\)</span>, there is an infinite
-number of <span class="math inline">\(L\)</span>-collisions and none of these instants of <span class="math inline">\(L\)</span>-collision is
-isolated;</p>
-<p><span class="math inline">\(v\)</span> for all <span class="math inline">\(K\subset \{ 1,\dots ,N \}\)</span> with cardinal
-<span class="math inline">\(|K| \in \{ 3,\dots, k_2-1 \}\)</span>, during <span class="math inline">\([0,\zeta )\)</span>, there is no
-<span class="math inline">\(K\)</span>-collision ;</p>
-<p><span class="math inline">\(vi\)</span> for all <span class="math inline">\(L\subset K\subset K_0\)</span> such that <span class="math inline">\(|L| = 2\)</span> and
-<span class="math inline">\(|K| = k_2\)</span>, for all instant <span class="math inline">\(t \in (0,\zeta)\)</span> of <span class="math inline">\(K\)</span>-collision and all
-<span class="math inline">\(s\in [0,t)\)</span>, during <span class="math inline">\((s,t)\)</span>, there is an infinite number of
-<span class="math inline">\(L\)</span>-collisions and none of these instants of <span class="math inline">\(L\)</span>-collision is isolated.</p>
+<div id="is26-invariant-measures-and-scaling-limits-of-integrable-systems" class="section level1 unnumbered hasAnchor">
+<h1>IS26: Invariant Measures and Scaling Limits of Integrable Systems<a href="is26-invariant-measures-and-scaling-limits-of-integrable-systems.html#is26-invariant-measures-and-scaling-limits-of-integrable-systems" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Organizer: Davide Gabrielli (University of L’Aquila)</p>
+<div id="simple-nonlinear-pdes-inspired-by-billiards" class="section level2 unnumbered hasAnchor">
+<h2>Simple nonlinear PDEs inspired by billiards<a href="is26-invariant-measures-and-scaling-limits-of-integrable-systems.html#simple-nonlinear-pdes-inspired-by-billiards" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="krzysztof-burdzy-1" class="section level4 unnumbered hasAnchor">
+<h4>Krzysztof Burdzy<a href="is26-invariant-measures-and-scaling-limits-of-integrable-systems.html#krzysztof-burdzy-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>“Pinned billiard balls” do not move but have pseudo-velocities. Pairs of
+balls are chosen one by one, in either a deterministic or random way.
+When a pair is chosen, it “collides” in the sense that the
+pseudo-velocities change according to the usual laws of totally elastic
+collisions. In other words, the total energy and total momentum are
+conserved.</p>
+<p>A one-dimensional pinned billiard balls model with local energy
+redistribution was considered in <span class="math inline">\([1]\)</span>. The results suggest that the
+model has a hydrodynamic limit and the parameters for the limit, the
+local variance <span class="math inline">\(\sigma\)</span> and mean <span class="math inline">\(\mu\)</span>, satisfy the coupled partial
+differential equations with freezing <span class="math display">\[\begin{aligned}
+\sigma_t(x,t) &amp; = - \mu_x(x,t) {\bf 1}_{ \sigma(x,t) &gt;0},\\
+\mu_t(x,t) &amp;=
+- \sigma_x(x,t) {\bf 1}_{ \sigma(x,t) &gt;0},\\
+\sigma(x,t) &amp; \geq 0.
+\end{aligned}\]</span> If the initial conditions are continuous then there
+exist continuous solutions for all time. This and many quantitative and
+qualitative results were obtained in <span class="math inline">\([2]\)</span>.</p>
 <p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> P. Cattiaux, L. Pédèches, The 2-D stochastic Keller-Segel particle
-model: existence and uniqueness, ALEA, Lat. Am. J. Probab. Math. Stat.
-13 (2016), 447–463.</p>
-<p><span class="math inline">\([2]\)</span> N. Fournier, B. Jourdain, Stochastic particle approximation of the
-Keller-Segel equation and two-dimensional generalization of Bessel
-processes, Ann. Appl. Probab. 27 (2017), 2807–2861.</p>
-<p><span class="math inline">\([3]\)</span> N. Fournier, Y. Tardy. Collisions of the supercritical
-Keller-Segel particle system. To appear in J. Eur. Math. Soc. Available
-on ArXiv: 2110.08490 math.PR, 2021.</p>
-<p><span class="math inline">\([4]\)</span> M. Fukushima, Y. Oshima, M. Takeda, Dirichlet forms and symmetric
-Markov processes. Second revised and extended edition. Walter de
-Gruyter, 2011.</p>
-<p><span class="math inline">\([5]\)</span> E.F. Keller, L.A. Segel, Initiation of slime mold aggregation
-viewed as an instability, J. Theor. Biol. 26 (1970), 399–415.</p>
+<p><span class="math inline">\([1]\)</span> Krzysztof Burdzy, Jeremy G. Hoskins and Stefan Steinerberger
+(2024) <em>From pinned billiard balls to partial differential equations</em>,
+<a href="https://arxiv.org/abs/2209.01503">Math Arxiv 2209.01503</a></p>
+<p><span class="math inline">\([2]\)</span> Krzysztof Burdzy and John Sylvester (2024) <em>Coupled transport
+equations with freezing</em>, <a href="https://arxiv.org/abs/2406.02707">Math Arxiv
+2406.02707</a></p>
 
 </div>
 </div>
@@ -328,8 +291,8 @@ viewed as an instability, J. Theor. Biol. 26 (1970), 399–415.</p>
           </div>
         </div>
       </div>
-<a href="is19-branching-and-interacting-particle-systems.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="is21-on-nodal-random-variables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="is25-quasi-stationary-distributions-and-applications.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="is27-rough-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

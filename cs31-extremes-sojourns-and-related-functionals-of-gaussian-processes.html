@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>IS20: Non-Equilibrium Statistical Mechanics | SPA 2025</title>
-  <meta name="description" content="IS20: Non-Equilibrium Statistical Mechanics | SPA 2025" />
+  <title>CS31: Extremes, Sojourns and Related Functionals of Gaussian Processes | SPA 2025</title>
+  <meta name="description" content="CS31: Extremes, Sojourns and Related Functionals of Gaussian Processes | SPA 2025" />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="IS20: Non-Equilibrium Statistical Mechanics | SPA 2025" />
+  <meta property="og:title" content="CS31: Extremes, Sojourns and Related Functionals of Gaussian Processes | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="IS20: Non-Equilibrium Statistical Mechanics | SPA 2025" />
+  <meta name="twitter:title" content="CS31: Extremes, Sojourns and Related Functionals of Gaussian Processes | SPA 2025" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="is19-branching-and-interacting-particle-systems.html"/>
-<link rel="next" href="is21-on-nodal-random-variables.html"/>
+<link rel="prev" href="cs30-gaussian-processes-for-fractional-dynamics-and-limiting-behaviour.html"/>
+<link rel="next" href="cs32-advances-in-statistical-inference-for-spatial-point-processes.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -250,75 +250,56 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="is20-non-equilibrium-statistical-mechanics" class="section level1 unnumbered hasAnchor">
-<h1>IS20: Non-Equilibrium Statistical Mechanics<a href="is20-non-equilibrium-statistical-mechanics.html#is20-non-equilibrium-statistical-mechanics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Organizer: Makoto Katori (Chuo University)</p>
-<div id="collisions-of-the-supercritical-keller-segel-particle-system" class="section level2 unnumbered hasAnchor">
-<h2>Collisions of the supercritical Keller-Segel particle system<a href="is20-non-equilibrium-statistical-mechanics.html#collisions-of-the-supercritical-keller-segel-particle-system" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="yoan-tardy" class="section level4 unnumbered hasAnchor">
-<h4>Yoan Tardy<a href="is20-non-equilibrium-statistical-mechanics.html#yoan-tardy" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>We study a particle system naturally associated to the <span class="math inline">\(2\)</span>-dimensional
-Keller-Segel equation. It consists of <span class="math inline">\(N\)</span> Brownian particles in the
-plane, interacting through a binary attraction in <span class="math inline">\(\theta /Nr\)</span>, where
-<span class="math inline">\(r\)</span> stands for the distance between two particles. When the intensity
-<span class="math inline">\(\theta\)</span> of this attraction is greater than <span class="math inline">\(2\)</span>, this particle system
-explodes in finite time. We assume that <span class="math inline">\(N&gt;3\theta\)</span> and study in details
-what happens near explosion. There are two slightly different scenarios,
-depending on the values of <span class="math inline">\(N\)</span> and <span class="math inline">\(\theta\)</span>, here is one: at explosion,
-a cluster consisting of precisely <span class="math inline">\(k_0\)</span> particles emerges, for some
-deterministic <span class="math inline">\(k_0\ge 7\)</span> depending on <span class="math inline">\(N\)</span> and <span class="math inline">\(\theta\)</span>. Just before
-explosion, there are infinitely many <span class="math inline">\((k_0-1)\)</span>-ary collisions. There are
-also infinitely many <span class="math inline">\((k_0-2)\)</span>-ary collisions before each <span class="math inline">\((k_0-1)\)</span>-ary
-collision. And there are infinitely many binary collisions before each
-<span class="math inline">\((k_0-2)\)</span>-ary collision. Finally, collisions of subsets of
-<span class="math inline">\(3,\dots,k_0-3\)</span> particles never occur. The other scenario is similar
-except that there are no <span class="math inline">\((k_0-2)\)</span>-ary collisions.</p>
-<p><strong>Theorem.(partially informal)</strong> Assume that <span class="math inline">\(\theta \geq 2\)</span>, that
-<span class="math inline">\(N&gt;3\theta\)</span> and define <span class="math inline">\(k_0 =\lceil 2N/\theta\rceil \in \{ 7,\dots N\}\)</span>,
-<span class="math inline">\(k_1 = k_0-1\)</span> and <span class="math inline">\(k_2\in \{k_0-1,k_0-2\}\)</span> depending on <span class="math inline">\(\theta\)</span> and
-<span class="math inline">\(N\)</span>. Consider the <span class="math inline">\(KS(\theta ,N)\)</span>-process <span class="math inline">\((X_t)_{t\ge 0}\)</span> which is a
-solution in a weak sense of the SDE
-<span class="math display">\[\mbox{ for all } i\in \{1,\dots, N\}, \quad {\rm d}X^i_t = {\rm d}B^i_t - \frac{\theta}{N} \sum_{j\ne i} \frac{X^i_t - X^j_t}{\|X^i_t - X^j_t\|^2} {\rm d}t.\]</span>
-For all <span class="math inline">\(x \in E_2\)</span>, we <span class="math inline">\(\mathbb{P}_x\)</span>-a.s. have the following
-properties:</p>
-<p><span class="math inline">\(i\)</span> <span class="math inline">\(\zeta\)</span> is finite and
-<span class="math inline">\(X_{\zeta- } =\lim _{t \rightarrow \zeta- } X_{t}\)</span> exists for the usual
-topology of <span class="math inline">\((\mathbb{R}^2)^N\)</span>;</p>
-<p><span class="math inline">\(ii\)</span> there is <span class="math inline">\(K_0\subset \{ 1,\dots, N \}\)</span> with cardinal
-<span class="math inline">\(|K_0| = k_0\)</span> such that there is a <span class="math inline">\(K_0\)</span>-collision in the configuration
-<span class="math inline">\(X_{\zeta-}\)</span>, and for all <span class="math inline">\(K\subset \{ 1,\dots,N \}\)</span> such that
-<span class="math inline">\(|K| &gt;k_0\)</span>, there is no <span class="math inline">\(K\)</span>-collision in the configuration
-<span class="math inline">\(X_{\zeta -}\)</span>;</p>
-<p><span class="math inline">\(iii\)</span> for all <span class="math inline">\(t\in [0,\zeta)\)</span> and all <span class="math inline">\(K \subset K_0\)</span> with cardinal
-<span class="math inline">\(|K| = k_1\)</span>, during <span class="math inline">\((t,\zeta)\)</span>, there is an infinite number of
-<span class="math inline">\(K\)</span>-collisions and none of these instants of <span class="math inline">\(K\)</span>-collision is isolated;</p>
-<p><span class="math inline">\(iv\)</span> if <span class="math inline">\(k_2= k_0-2\)</span>, then for all <span class="math inline">\(L\subset K\subset K_0\)</span> such that
-<span class="math inline">\(|L| = k_2\)</span> and <span class="math inline">\(|K| = k_1\)</span>, for all instant <span class="math inline">\(t \in (0,\zeta)\)</span> of
-<span class="math inline">\(K\)</span>-collision and all <span class="math inline">\(s\in [0,t)\)</span>, during <span class="math inline">\((s,t)\)</span>, there is an infinite
-number of <span class="math inline">\(L\)</span>-collisions and none of these instants of <span class="math inline">\(L\)</span>-collision is
-isolated;</p>
-<p><span class="math inline">\(v\)</span> for all <span class="math inline">\(K\subset \{ 1,\dots ,N \}\)</span> with cardinal
-<span class="math inline">\(|K| \in \{ 3,\dots, k_2-1 \}\)</span>, during <span class="math inline">\([0,\zeta )\)</span>, there is no
-<span class="math inline">\(K\)</span>-collision ;</p>
-<p><span class="math inline">\(vi\)</span> for all <span class="math inline">\(L\subset K\subset K_0\)</span> such that <span class="math inline">\(|L| = 2\)</span> and
-<span class="math inline">\(|K| = k_2\)</span>, for all instant <span class="math inline">\(t \in (0,\zeta)\)</span> of <span class="math inline">\(K\)</span>-collision and all
-<span class="math inline">\(s\in [0,t)\)</span>, during <span class="math inline">\((s,t)\)</span>, there is an infinite number of
-<span class="math inline">\(L\)</span>-collisions and none of these instants of <span class="math inline">\(L\)</span>-collision is isolated.</p>
+<div id="cs31-extremes-sojourns-and-related-functionals-of-gaussian-processes" class="section level1 unnumbered hasAnchor">
+<h1>CS31: Extremes, Sojourns and Related Functionals of Gaussian Processes<a href="cs31-extremes-sojourns-and-related-functionals-of-gaussian-processes.html#cs31-extremes-sojourns-and-related-functionals-of-gaussian-processes" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Organizer: Zbigniew Michna (Wrocław University of Science and Technology)</p>
+<div id="on-a-weak-convergence-theorem-for-the-normalized-maximum-of-stationary-gaussian-processes-with-a-trend" class="section level2 unnumbered hasAnchor">
+<h2>On a Weak Convergence Theorem for the Normalized Maximum of Stationary Gaussian Processes with a Trend<a href="cs31-extremes-sojourns-and-related-functionals-of-gaussian-processes.html#on-a-weak-convergence-theorem-for-the-normalized-maximum-of-stationary-gaussian-processes-with-a-trend" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="goran-popivoda" class="section level4 unnumbered hasAnchor">
+<h4>Goran Popivoda<a href="cs31-extremes-sojourns-and-related-functionals-of-gaussian-processes.html#goran-popivoda" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We present a Gnedeko-type limit theorem, which states that the
+normalized maximum of the process <span class="math inline">\(X(t) = \xi(t) - g(t)\)</span>, <span class="math inline">\(t\geq0\)</span>,
+converges weakly to a Gumbel distribution. In this context, <span class="math inline">\(\xi(t)\)</span>
+represents a stationary Gaussian process, while <span class="math inline">\(g(t)\)</span> is a
+deterministic function. The inclusion of the trend function <span class="math inline">\(g(t)\)</span>
+disrupts stationarity, making it challenging to apply classical results.</p>
+<p>We provide the normalizing constants <span class="math inline">\(a_T\)</span> and <span class="math inline">\(b_T\)</span> such that
+<span class="math inline">\(a_T(\max_{t \in [0,T]} X(t) - b_T)\)</span> converges to a mixed Gumbel
+distribution as <span class="math inline">\(T \to \infty\)</span>. Notably, the normalizing constant <span class="math inline">\(a_T\)</span>
+appears to be unaffected by the introduction of the trend, whereas the
+constant <span class="math inline">\(b_T\)</span> is influenced by it.</p>
 <p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> P. Cattiaux, L. Pédèches, The 2-D stochastic Keller-Segel particle
-model: existence and uniqueness, ALEA, Lat. Am. J. Probab. Math. Stat.
-13 (2016), 447–463.</p>
-<p><span class="math inline">\([2]\)</span> N. Fournier, B. Jourdain, Stochastic particle approximation of the
-Keller-Segel equation and two-dimensional generalization of Bessel
-processes, Ann. Appl. Probab. 27 (2017), 2807–2861.</p>
-<p><span class="math inline">\([3]\)</span> N. Fournier, Y. Tardy. Collisions of the supercritical
-Keller-Segel particle system. To appear in J. Eur. Math. Soc. Available
-on ArXiv: 2110.08490 math.PR, 2021.</p>
-<p><span class="math inline">\([4]\)</span> M. Fukushima, Y. Oshima, M. Takeda, Dirichlet forms and symmetric
-Markov processes. Second revised and extended edition. Walter de
-Gruyter, 2011.</p>
-<p><span class="math inline">\([5]\)</span> E.F. Keller, L.A. Segel, Initiation of slime mold aggregation
-viewed as an instability, J. Theor. Biol. 26 (1970), 399–415.</p>
+<p><span class="math inline">\([1]\)</span> V. I. Piterbarg, <em>Asymptotic Methods in the Theory of Gaussian
+Processes and Fields</em>. Providence, Rhode Island: AMS Translations of
+Mathematical Monographs 148, 1 ed., 1996.</p>
+<p><span class="math inline">\([2]\)</span> J.-M. Azais and M. Wschebor, <em>Level Sets and Extrema of Random
+Processes and Fields</em>. New York: Wiley, 1 ed., 2009.</p>
+<p><span class="math inline">\([3]\)</span> M. R. Leadbetter, G. Lindgren, and H. Rootzen, <em>Extremes and
+Related Properties of Random Sequences and Processes</em>. Springer Series
+in Statistics, Springer Verlag, 1983.</p>
+<p><span class="math inline">\([4]\)</span> V. Piterbarg and S. Stamatovic, “Limit Theorem for High Level
+a-Upcrossings by <span class="math inline">\(\chi\)</span>-Process,” <em>Theory of Probability &amp; Its
+Applications</em>, vol. 48, no. 4, pp. 734–741, 2004.</p>
+<p><span class="math inline">\([5]\)</span> B. Stamatovic and S. Stamatovic, “Cox limit theorem for large
+excursions of a norm of a Gaussian vector process,” <em>Statistics &amp;
+Probability Letters</em>, vol. 80, no. 19, pp. 1479–1485, 2010.</p>
+<p><span class="math inline">\([6]\)</span> J. Xiao, Y. Wen, and Z. Tan, “The limit properties of point
+processes of upcrossings in nonstationary strongly dependent Gaussian
+models,” <em>Statistics &amp; Probability Letters</em>, vol. 149, pp. 38–46, 2019.</p>
+<p><span class="math inline">\([7]\)</span> D. G. Konstantinides, V. Piterbarg, and S. Stamatovic,
+“Gnedenko-Type Limit Theorems for Cyclostationary <span class="math inline">\(\chi^2\)</span>-Processes,”
+<em>Lithuanian Mathematical Journal</em>, vol. 44, no. 2, pp. 157–167, 2004.</p>
+<p><span class="math inline">\([8]\)</span> Z. Tan and E. Hashorva, “Limit theorems for extremes of strongly
+dependent cyclo-stationary <span class="math inline">\(\chi\)</span>-processes,” <em>Extremes</em>, vol. 16,
+no. 2, pp. 241–254, 2013.</p>
+<p><span class="math inline">\([9]\)</span> J.-M. Azais and C. Mercadier, “Asymptotic Poisson Character of
+Extremes in Non-Stationary Gaussian Models,” <em>Extremes</em>, vol. 6, no. 4,
+pp. 301–318, 2003.</p>
+<p><span class="math inline">\([10]\)</span> L. Bai, K. Dȩbicki, E. Hashorva, and L. Ji, “Extremes of
+threshold-dependent Gaussian processes,” <em>Science China Mathematics</em>,
+vol. 61, no. 11, pp. 1971–2002, 2018.</p>
+<p><span class="math inline">\([11]\)</span> E. Hashorva and L. Ji, “Piterbarg theorems for chi-processes with
+trend,” <em>Extremes</em>, vol. 18, pp. 37–64, 2015.</p>
 
 </div>
 </div>
@@ -328,8 +309,8 @@ viewed as an instability, J. Theor. Biol. 26 (1970), 399–415.</p>
           </div>
         </div>
       </div>
-<a href="is19-branching-and-interacting-particle-systems.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="is21-on-nodal-random-variables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cs30-gaussian-processes-for-fractional-dynamics-and-limiting-behaviour.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cs32-advances-in-statistical-inference-for-spatial-point-processes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
