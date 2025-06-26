@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | SPA 2025</title>
-  <meta name="description" content="Page not found | SPA 2025" />
+  <title>CS22: Noncommutative Stochastic Processes | SPA 2025</title>
+  <meta name="description" content="CS22: Noncommutative Stochastic Processes | SPA 2025" />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | SPA 2025" />
+  <meta property="og:title" content="CS22: Noncommutative Stochastic Processes | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | SPA 2025" />
+  <meta name="twitter:title" content="CS22: Noncommutative Stochastic Processes | SPA 2025" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="cs21-stochastic-numerics-on-manifolds-1.html"/>
+<link rel="next" href="cs33-llms-and-ml-in-dynamic-risk-control..html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -401,19 +401,84 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="cs22-noncommutative-stochastic-processes-1" class="section level2 unnumbered hasAnchor">
+<h2>CS22: Noncommutative Stochastic Processes<a href="cs22-noncommutative-stochastic-processes-1.html#cs22-noncommutative-stochastic-processes-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>date: 7/15/2025, time: 16:00-17:30, room: ICS 139</p>
+<p>Organizer: Anna Wysoczańska-Kula (Uniwersytet Wrocławski)</p>
+<div id="stochastic-optimization-in-free-probability" class="section level3 unnumbered hasAnchor">
+<h3>Stochastic optimization in free probability<a href="cs22-noncommutative-stochastic-processes-1.html#stochastic-optimization-in-free-probability" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="david-jekel-university-of-copenhagen" class="section level4 unnumbered hasAnchor">
+<h4>David Jekel (University of Copenhagen)<a href="cs22-noncommutative-stochastic-processes-1.html#david-jekel-university-of-copenhagen" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>This is based on joint work with Wilfrid Gangbo, Kyeongsik Nam, and
+Aaron Palmer <span class="math inline">\([1]\)</span>, in which we develop an analog of optimal control
+theory in the free probability setting, motivated in part by connections
+with mean field games.</p>
+<p><strong>Free probability:</strong> Free probability, developed in large part by
+Voiculescu, is a theory of non-commuting random variables which can be
+used the describe the large-<span class="math inline">\(n\)</span> behavior of certain <span class="math inline">\(n \times n\)</span> random
+matrices. The idea is that the algebra of classical random variables
+<span class="math inline">\(L^\infty(\Omega,P)\)</span> is replaced by a non-commutative von Neumann
+algebra and the expectation is replaced by a tracial state
+<span class="math inline">\(\tau: M \to \mathbb{C}\)</span>. The role of the normal distribution from
+classical probability is played by Wigner’s semicircular distribution,
+and classical independence is replaced by <em>free independence</em>, a
+condition motivated by free products of groups. In particular, a
+<span class="math inline">\(d\)</span>-variable free Brownian motion is a process
+<span class="math inline">\(S_t = (S_t^{(1)},\dots,S_t^{(d)})\)</span> where the increments are freely
+independent and the different coordinates are also freely independent. A
+free Brownian motion describes the large-<span class="math inline">\(n\)</span> behavior of a Brownian
+motion on the space <span class="math inline">\(M_n(\mathbb{C})_{\operatorname{sa}}^d\)</span> of
+<span class="math inline">\(d\)</span>-tuples of self-adjoint matrices.</p>
+<p><strong>Stochastic optimization problems:</strong> We consider stochastic
+optimization problems that using both a free Brownian motion <span class="math inline">\(S_t\)</span> and a
+classical Brownian <span class="math inline">\(W_t\)</span>; these processes are thus classical random
+objects taking values in a tracial von Neumann algebra, equipped with
+both classical and non-commutative filtrations. We consider processes
+satisfying <span class="math display">\[dX_t = \beta_F dS_t + \beta_C \,dW_t + \alpha_t\,dt,\]</span>
+where <span class="math inline">\(\alpha_t\)</span> is a control that we want to choose. The stochastic
+optimization problem is
+<span class="math display">\[\text{minimize } \mathbb{E} [\int_0^1 L(X_t,\alpha_t)\,dt + g(X_1)] \text{ over } \alpha,\]</span>
+where the running cost <span class="math inline">\(L\)</span> and the terminal cost <span class="math inline">\(g\)</span> are given functions
+that can be evaluated on non-commuting random variables. The inclusion
+of both <span class="math inline">\(S_t\)</span> and <span class="math inline">\(W_t\)</span> is motivated by mean field game theory (see
+<span class="math inline">\([2]\)</span>): The <span class="math inline">\(S_t\)</span> represents individual noise associated to a single
+player (motivated by the Brownian motion that affects all the matrix
+entries), and the <span class="math inline">\(W_t\)</span> represents a common noise that affects all the
+players (which in the matrix model would be a random scalar multiple of
+the identity matrix added to each of the <span class="math inline">\(d\)</span> matrices).</p>
+<p><strong>Results:</strong> We study the value of the minimization problem as a
+function of the initial condition <span class="math inline">\(X_0\)</span>, and show that it satisfies a
+non-commutative version of the dynamic programming principle and
+Hamilton–Jacobi equation. A key challenge is that the value of the
+optimization problem may depend on the choice of ambient von Neumann
+algebra <span class="math inline">\(M\)</span> and filtration. We thus take the infimum over all choices of
+<span class="math inline">\(M\)</span> as well, and analyze how to join together different given choices of
+<span class="math inline">\(M\)</span>. However, under certain convexity assumptions, the answer is the
+same regardless of the choice of <span class="math inline">\(M\)</span>, and in this case we can show that
+the value of the free stochastic optimal problem gives the large-<span class="math inline">\(n\)</span>
+limit of matrix optimal control problems. We remark that special cases
+of this setup relate closely with free entropy theory and the large
+deviation principle of Biane, Capitaine, and Guionnet <span class="math inline">\([3]\)</span>.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> Wilfrid Gangbo, David Jekel, Kyeongsik Nam, and Aaron Z. Palmer.
+Viscosity solutions in non-commutative variables. Preprint, 2025,
+arXiv:2502.17329</p>
+<p><span class="math inline">\([2]\)</span> René Carmona, François Delarue, et al. <em>Probabilistic theory of
+mean field games with applications I.</em> Springer, 2018.</p>
+<p><span class="math inline">\([3]\)</span> Philippe Biane, Mireille Capitaine, and Alice Guionnet. Large
+deviation bounds for matrix Brownian motion. <em>Inventiones mathematicae</em>,
+152, 2003, pp. 433–459.</p>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="cs21-stochastic-numerics-on-manifolds-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cs33-llms-and-ml-in-dynamic-risk-control..html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

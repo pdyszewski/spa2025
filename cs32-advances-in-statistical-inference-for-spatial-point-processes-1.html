@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | SPA 2025</title>
-  <meta name="description" content="Page not found | SPA 2025" />
+  <title>CS32: Advances in Statistical Inference for Spatial Point Processes | SPA 2025</title>
+  <meta name="description" content="CS32: Advances in Statistical Inference for Spatial Point Processes | SPA 2025" />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | SPA 2025" />
+  <meta property="og:title" content="CS32: Advances in Statistical Inference for Spatial Point Processes | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | SPA 2025" />
+  <meta name="twitter:title" content="CS32: Advances in Statistical Inference for Spatial Point Processes | SPA 2025" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="cs29-computing-the-invariant-distribution-of-linear-and-non-linear-diffusions-by-ergodic-simulation-1.html"/>
+<link rel="next" href="cs34-non-local-operators-in-probability-anomalous-transport-stochastic-resettings-and-diffusions-with-memory-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -401,19 +401,130 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="cs32-advances-in-statistical-inference-for-spatial-point-processes-1" class="section level2 unnumbered hasAnchor">
+<h2>CS32: Advances in Statistical Inference for Spatial Point Processes<a href="cs32-advances-in-statistical-inference-for-spatial-point-processes-1.html#cs32-advances-in-statistical-inference-for-spatial-point-processes-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>date: 7/17/2025, time: 14:00-15:30, room: ICS 119</p>
+<p>Organizer: Bartlomiej Blaszczyszyn (Inria/ENS)</p>
+<div id="minimax-estimation-of-the-structure-factor-of-spatial-point-processes" class="section level3 unnumbered hasAnchor">
+<h3>Minimax Estimation of the Structure Factor of Spatial Point Processes<a href="cs32-advances-in-statistical-inference-for-spatial-point-processes-1.html#minimax-estimation-of-the-structure-factor-of-spatial-point-processes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="gabriel-mastrilli-ensai-rennes-inria-paris" class="section level4 unnumbered hasAnchor">
+<h4>Gabriel Mastrilli (Ensai Rennes, Inria Paris)<a href="cs32-advances-in-statistical-inference-for-spatial-point-processes-1.html#gabriel-mastrilli-ensai-rennes-inria-paris" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Spectral methods have recently gained attention in spatial statistics as
+an alternative to direct-space techniques for second-order inference of
+spatial point processes. Instead of analyzing second-order summary
+statistics like the Ripley K-function, one can estimate Bartlett’s
+spectral measure, also known in physics as the structure factor <span class="math inline">\(S\)</span>,
+which is the Fourier transform of the pair correlation function. Several
+estimators of <span class="math inline">\(S\)</span> have been introduced <span class="math inline">\([1, 2, 3]\)</span>. However, without a
+reference minimax rate of convergence, it remains unclear whether better
+estimators could be constructed.</p>
+<p>We address this gap by proving the following minimax result: for
+estimating a structure factor of Hölder regularity <span class="math inline">\(\beta\)</span>, the
+worst-case error of any estimator is at least the expected number of
+observed points raised to the power <span class="math inline">\(-\beta/(2\beta + d)\)</span>. We then
+construct multi-taper estimators that achieve this optimal rate and
+further show that they exhibit exponential concentration. These
+estimators are oracle in the sense that they depend on unknown
+parameters related to the smoothness of <span class="math inline">\(S\)</span>. To obtain a practical
+estimator, we propose a cross-validation method based on random thinning
+and decorrelation between distinct frequencies.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> D. Hawat, G. Gautier, R. Bardenet and R. Lachièze-Rey, "On
+estimating the structure factor of a point process, with applications to
+hyperuniformity", <em>Statistics and Computing</em>, 2023.</p>
+<p><span class="math inline">\([2]\)</span> T. Rajala, S. Olhede, J. P Grainger, and D. J Murrell, "What is
+the Fourier transform of a spatial point process ?", <em>IEEE Transactions
+on Information Theory</em>, 2023.</p>
+<p><span class="math inline">\([3]\)</span> J. Yang and Y. Guan,"Fourier analysis of spatial point
+processes", <em>arXiv:2401.06403</em>, 2024.</p>
+</div>
+</div>
+<div id="estimating-the-hyperuniformity-exponent-of-point-processes" class="section level3 unnumbered hasAnchor">
+<h3>Estimating the hyperuniformity exponent of point processes<a href="cs32-advances-in-statistical-inference-for-spatial-point-processes-1.html#estimating-the-hyperuniformity-exponent-of-point-processes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="bartlomiej-blaszczyszyn-inriaens" class="section level4 unnumbered hasAnchor">
+<h4>Bartlomiej Blaszczyszyn (Inria/ENS)<a href="cs32-advances-in-statistical-inference-for-spatial-point-processes-1.html#bartlomiej-blaszczyszyn-inriaens" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><em>Hyperuniformity</em> characterizes random spatial structures whose
+large-scale variance grows more slowly than that of Poisson processes.
+First introduced in statistical physics by Torquato and Stillinger
+<span class="math inline">\([1]\)</span>, hyperuniform systems have attracted considerable attention due to
+their intermediate nature between perfect crystals, liquids, and
+glasses, and appears in a wide range of applications, from DNA
+organization and immune system dynamics to photoreceptor arrangements,
+urban planning, and cosmology.</p>
+<p>Detecting and quantifying hyperuniformity is essential across these
+diverse fields. Yet, statistical testing for hyperuniformity has only
+recently begun to develop. In joint work <span class="math inline">\([2]\)</span>, we address the problem
+of estimating the “strength” of hyperuniformity—formally, the exponent
+governing the decay of the spectral density near zero frequency—in a
+class of stationary point processes in Euclidean space. The key
+mathematical idea is that the variance of linear statistics, defined
+using smooth, rapidly decaying test functions, grows in a way that
+explicitly reflects this exponent. Using a multivariate central limit
+theorem for a family of such statistics, constructed from orthogonal
+functions at multiple scales (e.g., wavelets), we derive an
+asymptotically consistent estimator of the strength of hyperuniformity.
+This estimator can be computed from a single realization of the point
+process and comes with explicit confidence intervals. We validate this
+approach through simulations of various point process models and
+demonstrate its applicability on real data.</p>
+<div class="float">
+<embed src="ginibre_expl-www1.pdf" style="width:35.0%" />
+<div class="figcaption">We estimated the hyperuniformity exponent <span class="math inline">\(\alpha\)</span> for the Ginibre
+point process in two dimensions, using 75 Hermitian wavelets (<span class="math inline">\(f_i\)</span>).
+This process is known to have an exponent of <span class="math inline">\(\alpha=2\)</span>. The estimation
+result is shown on the left, and the point process itself (with 1600
+points) on the right. The estimator of the hyperuniformity exponent
+<span class="math inline">\(\widehat{\alpha} = \text{dimension\ }d - \text{slope of } \mathcal{C}\)</span>,
+where
+<span class="math inline">\(\mathcal{C}: j \mapsto \frac{1}{\log(R)} \log \left( \sum_{i \in I} \left( \sum_{x \in \Phi \cap [-R, R]^d} f_i\left(x/R^j\right) \right)^2 \right)\)</span>.</div>
+</div>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> Torquato, S. and Stillinger, F. H. (2003). Local density
+fluctuations, hyperuniformity, and order metrics. <em>Physical Review E</em>
+<strong>68</strong> 041113.</p>
+<p><span class="math inline">\([2]\)</span> Mastrilli, G., Błaszczyszyn, B. and Lavancier, F. (2024)
+Estimating the hyperuniformity exponent of point processes
+<em>arXiv:2407.16797</em>.</p>
+</div>
+</div>
+<div id="conformal-novelty-detection-for-replicate-point-patterns" class="section level3 unnumbered hasAnchor">
+<h3>Conformal Novelty Detection for Replicate Point Patterns<a href="cs32-advances-in-statistical-inference-for-spatial-point-processes-1.html#conformal-novelty-detection-for-replicate-point-patterns" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="christophe-biscio-university-of-aalborg" class="section level4 unnumbered hasAnchor">
+<h4>Christophe Biscio (University of Aalborg)<a href="cs32-advances-in-statistical-inference-for-spatial-point-processes-1.html#christophe-biscio-university-of-aalborg" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Monte Carlo tests are widely used for computing valid p-values without
+requiring known distributions of test statistics. When performing
+multiple Monte Carlo tests, it is essential to maintain control of the
+type I error. Some techniques for multiplicity control pose requirements
+on the joint distribution of the p-values, for instance independence,
+which can be computationally intensive to achieve using naïve multiple
+Monte Carlo testing.</p>
+<p>We highlight in this work that multiple Monte Carlo testing is an
+instance of conformal novelty detection. Leveraging this insight enables
+a more efficient multiple Monte Carlo testing procedure, avoiding
+excessive simulations while still ensuring exact control over the false
+discovery rate or the family-wise error rate. We call this approach
+conformal multiple Monte Carlo testing.</p>
+<p>The performance is investigated in the context of global envelope tests
+for point pattern data through a simulation study and an application to
+a sweat gland data set. Results reveal that with a fixed number of
+simulations under the null hypothesis, our proposed method yields
+substantial improvements in power of the testing procedure as compared
+to the naïve multiple Monte Carlo testing procedure.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> Christophe A.N. Biscio and Adrien Mazoyer and Martin V. Vejling.
+"Conformal novelty detection for replicate point patterns with FDR or
+FWER control." <em>arXiv: 2501.18195</em>.</p>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="cs29-computing-the-invariant-distribution-of-linear-and-non-linear-diffusions-by-ergodic-simulation-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cs34-non-local-operators-in-probability-anomalous-transport-stochastic-resettings-and-diffusions-with-memory-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
