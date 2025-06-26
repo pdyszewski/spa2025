@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Plenary session 2 | SPA 2025</title>
-  <meta name="description" content="Plenary session 2 | SPA 2025" />
+  <title>IS18: SDEs: Analysis, Approximation, Inference | SPA 2025</title>
+  <meta name="description" content="IS18: SDEs: Analysis, Approximation, Inference | SPA 2025" />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Plenary session 2 | SPA 2025" />
+  <meta property="og:title" content="IS18: SDEs: Analysis, Approximation, Inference | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Plenary session 2 | SPA 2025" />
+  <meta name="twitter:title" content="IS18: SDEs: Analysis, Approximation, Inference | SPA 2025" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="cs47-dynamical-systems-modelling-ii-1.html"/>
-<link rel="next" href="superdiffusive-central-limit-theorem-for-the-critical-stochastic-burgers-equation.html"/>
+<link rel="prev" href="is15-extremes-of-gaussian-and-related-random-fields-1.html"/>
+<link rel="next" href="is24-random-media-and-limit-theorems-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -401,16 +401,82 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="plenary-session-2" class="section level1 unnumbered hasAnchor">
-<h1>Plenary session 2<a href="plenary-session-2.html#plenary-session-2" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="is18-sdes-analysis-approximation-inference-1" class="section level2 unnumbered hasAnchor">
+<h2>IS18: SDEs: Analysis, Approximation, Inference<a href="is18-sdes-analysis-approximation-inference-1.html#is18-sdes-analysis-approximation-inference-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>date: 7/15/2025, time: 16:00-17:30, room: IM WS</p>
+<p>Organizer: Oleksii Kulyk (Wrocław University of Science and Technology)</p>
+<div id="a-tail-respecting-explicit-numerical-scheme-for-lévy-driven-sdes-with-superlinear-drifts" class="section level3 unnumbered hasAnchor">
+<h3>A Tail-Respecting Explicit Numerical Scheme for Lévy-Driven SDEs With Superlinear Drifts<a href="#a-tail-respecting-explicit-numerical-scheme-for-l%C3%A9vy-driven-sdes-with-superlinear-drifts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="ilya-pavlyukevich-friedrich-schiller-university-jena" class="section level4 unnumbered hasAnchor">
+<h4>Ilya Pavlyukevich (Friedrich Schiller University Jena)<a href="is18-sdes-analysis-approximation-inference-1.html#ilya-pavlyukevich-friedrich-schiller-university-jena" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We present an explicit numerical approximation scheme, denoted by
+<span class="math inline">\(\{X^n\}\)</span>, for the effective simulation of solutions <span class="math inline">\(X\)</span> to a
+multivariate stochastic differential equation
+<span class="math display">\[X_t=x + \int_0^t A(X_s)\,\mathrm{d} s
++ \int_0^t a(X_{s})\,\mathrm{d} s + \int_0^t b(X_{s})\,\mathrm{d} B_s + \int_0^t c(X_{s-})\,\mathrm{d} Z_s\]</span>
+driven by a <span class="math inline">\(d\)</span>-dimensional standard Brownian motion <span class="math inline">\(B\)</span>,
+<span class="math inline">\(d\in\mathbb N\)</span>, and an independent <span class="math inline">\(d\)</span>-dimensional Lévy process <span class="math inline">\(Z\)</span>.</p>
+<p>We assume that</p>
+<p>1) the function <span class="math inline">\(A\)</span> is <em>superlinearly dissipative</em>, i.e., there are
+<span class="math inline">\(\kappa\in(1,\infty)\)</span> and <span class="math inline">\(C\in(0,\infty)\)</span> such that
+<span class="math display">\[\langle A(x),x\rangle \leq -C\|x\|^{1+\kappa}+C,\quad x\in\mathbb R^d,\]</span>
+and satisfies certain conditions on its derivatives;</p>
+<p>2) the functions <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> are bounded and globally Lipschitz
+continuous;</p>
+<p>3) There is <span class="math inline">\(p\in(0,\infty)\)</span> such that the Lévy measure <span class="math inline">\(\nu\)</span> of <span class="math inline">\(Z\)</span>
+satisfies <span class="math display">\[\int_{\|z\|&gt;1}\|z\|^p\nu(\mathrm{d} z)&lt;\infty.\]</span></p>
+<p>Under these assumptions, we show that for any <span class="math inline">\(q\in (0,p+\kappa-1)\)</span>, the
+strong <span class="math inline">\(L^q\)</span>-convergence
+<span class="math display">\[\sup_{t\in[0,T]}\mathbf E \|X^n_t-X_t\|^q=\mathcal O (h_n^{\gamma})\]</span>
+holds true, in particular, our numerical scheme preserves the
+<span class="math inline">\(q\)</span>-moments of the solution beyond the order <span class="math inline">\(p\)</span>. Additionally, for any
+<span class="math inline">\(q\in (0,p)\)</span> we establish strong uniform convergence:
+<span class="math display">\[\mathbf E\sup_{t\in[0,T]} \|X^n_t-X_t\|^q=\mathcal{O} (  h_n^{\delta_q^\mathrm{uc}} ).\]</span>
+In both cases we determine the convergence rates.</p>
+<p>In the special case of SDEs driven solely by a Brownian motion, our
+numerical scheme preserves super-exponential moments of the solution.</p>
+<p>The scheme <span class="math inline">\(\{X^n\}\)</span> is realized as a combination of a well-known Euler
+method with a Lie–Trotter type splitting technique.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> O. Aryasova, O. Kulyk and I. Pavlyukevich. “A tail-respecting
+explicit numerical scheme for Lévy-driven SDEs with superlinear drifts.”
+<em>arXiv:2504.07255 math.PR</em>, 2025.</p>
+<p><span class="math inline">\([2]\)</span> A. Kulik and I. Pavlyukevich. “Moment bounds for dissipative
+semimartingales with heavy jumps.” <em>Stochastic Processes and their
+Applications</em>, Vol. 141, 2021. pp. 274–308.</p>
+</div>
+</div>
+<div id="feynman-kac-formula-for-the-gradient-of-the-dirichlet-problem-and-its-applications" class="section level3 unnumbered hasAnchor">
+<h3>Feynman-Kac formula for the gradient of the Dirichlet problem and its applications<a href="is18-sdes-analysis-approximation-inference-1.html#feynman-kac-formula-for-the-gradient-of-the-dirichlet-problem-and-its-applications" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="arturo-kohatsu-higa-ritsumeikan-university" class="section level4 unnumbered hasAnchor">
+<h4>Arturo Kohatsu-Higa (Ritsumeikan University)<a href="is18-sdes-analysis-approximation-inference-1.html#arturo-kohatsu-higa-ritsumeikan-university" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>NA</p>
+</div>
+</div>
+<div id="statistical-inference-for-locally-stable-regression" class="section level3 unnumbered hasAnchor">
+<h3>Statistical inference for locally stable regression<a href="is18-sdes-analysis-approximation-inference-1.html#statistical-inference-for-locally-stable-regression" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="hiroki-masuda-university-of-tokyo" class="section level4 unnumbered hasAnchor">
+<h4>Hiroki Masuda (University of Tokyo)<a href="is18-sdes-analysis-approximation-inference-1.html#hiroki-masuda-university-of-tokyo" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We propose a class of flexible continuous-time location-scale regression
+models driven by a locally stable system noise. Our primary interest is
+statistical inference based on a high-frequency sample over a fixed time
+domain. We construct a tailor-made quasi-likelihood function and show
+some asymptotic distributional results of the associated estimator:
+different from the diffusion-type models, the setting allows us to
+consistently estimate the trend, scale, and activity index. We will also
+present a method for relative model comparison. Some possible extensions
+and refinements will be mentioned.</p>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="cs47-dynamical-systems-modelling-ii-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="superdiffusive-central-limit-theorem-for-the-critical-stochastic-burgers-equation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="is15-extremes-of-gaussian-and-related-random-fields-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="is24-random-media-and-limit-theorems-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
